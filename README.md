@@ -2,6 +2,10 @@
 
 A comprehensive multi-agent system for processing and extracting structured data from various input formats (PDF, JSON, Email) using AI-powered classification and extraction. This system leverages specialized agents to handle different data types, enabling efficient, accurate, and scalable data processing workflows.
 
+## 🖼️ UI Preview
+
+![UI Preview](UI_Preview.png)
+
 ## 🎯 System Overview
 
 This system automatically:
