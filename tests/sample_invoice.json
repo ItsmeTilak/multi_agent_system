@@ -1,0 +1,114 @@
+{
+  "invoice": {
+    "header": {
+      "invoice_number": "INV-2024-001234",
+      "invoice_date": "2024-01-15",
+      "due_date": "2024-02-14",
+      "currency": "USD",
+      "status": "pending"
+    },
+    "vendor": {
+      "company_name": "TechSolutions Inc.",
+      "address": {
+        "street": "123 Business Ave",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip_code": "94105",
+        "country": "USA"
+      },
+      "contact": {
+        "phone": "+1-415-555-0123",
+        "email": "billing@techsolutions.com",
+        "website": "www.techsolutions.com"
+      },
+      "tax_id": "12-3456789"
+    },
+    "customer": {
+      "company_name": "ACME Corporation",
+      "contact_person": "Jane Smith",
+      "address": {
+        "street": "456 Corporate Blvd",
+        "city": "New York",
+        "state": "NY",
+        "zip_code": "10001",
+        "country": "USA"
+      },
+      "contact": {
+        "phone": "+1-212-555-0456",
+        "email": "jane.smith@acmecorp.com"
+      },
+      "customer_id": "CUST-ACME-001"
+    },
+    "line_items": [
+      {
+        "item_id": "SOFT-001",
+        "description": "Software License - Enterprise Plan",
+        "quantity": 5,
+        "unit_price": 299.99,
+        "total_price": 1499.95,
+        "category": "Software",
+        "tax_rate": 0.08
+      },
+      {
+        "item_id": "SUPP-001",
+        "description": "Premium Support Package (12 months)",
+        "quantity": 1,
+        "unit_price": 2400.00,
+        "total_price": 2400.00,
+        "category": "Support",
+        "tax_rate": 0.08
+      },
+      {
+        "item_id": "TRAIN-001",
+        "description": "Training Session - Advanced Features",
+        "quantity": 3,
+        "unit_price": 450.00,
+        "total_price": 1350.00,
+        "category": "Training",
+        "tax_rate": 0.08
+      },
+      {
+        "item_id": "SETUP-001",
+        "description": "Initial Setup and Configuration",
+        "quantity": 1,
+        "unit_price": 750.00,
+        "total_price": 750.00,
+        "category": "Services",
+        "tax_rate": 0.08
+      }
+    ],
+    "summary": {
+      "subtotal": 5999.95,
+      "tax_amount": 479.996,
+      "discount": {
+        "type": "percentage",
+        "value": 5,
+        "amount": 299.9975
+      },
+      "shipping": 0.00,
+      "total_amount": 6179.95
+    },
+    "payment_terms": {
+      "method": "Net 30",
+      "payment_methods": ["Bank Transfer", "Check", "ACH"],
+      "late_fee": {
+        "rate": 1.5,
+        "type": "monthly"
+      }
+    },
+    "notes": [
+      "Payment due within 30 days of invoice date",
+      "Late payments subject to 1.5% monthly service charge",
+      "For questions regarding this invoice, contact billing@techsolutions.com",
+      "Thank you for your business!"
+    ],
+    "metadata": {
+      "created_by": "billing_system",
+      "created_at": "2024-01-15T10:30:00Z",
+      "project_reference": "PROJ-ACME-2024-Q1",
+      "purchase_order": "PO-ACME-240115-001",
+      "department": "IT Services",
+      "approved_by": "Mike Johnson"
+    }
+  }
+}

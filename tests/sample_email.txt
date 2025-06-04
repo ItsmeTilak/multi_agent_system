@@ -1,0 +1,42 @@
+From: john.doe@acmecorp.com
+To: support@techsolutions.com
+Subject: URGENT: System Down - Production Impact
+Date: Mon, 15 Jan 2024 14:30:22 -0500
+Priority: High
+
+Dear Support Team,
+
+We are experiencing a critical system outage that started approximately 30 minutes ago at 2:00 PM EST. Our main production server (srv-prod-01) is completely unresponsive, and we cannot access any of our customer-facing applications.
+
+ISSUE DETAILS:
+- Server: srv-prod-01 (192.168.1.100)
+- Service affected: Customer Portal, Payment Gateway, Order Management
+- Error messages: "Database connection timeout" and "Service unavailable"
+- Impact: All customer transactions are blocked
+- Estimated revenue loss: $50,000 per hour
+
+IMMEDIATE ACTIONS NEEDED:
+1. Emergency server restart procedure
+2. Database connection diagnostics
+3. Failover to backup systems if available
+4. Status update within 15 minutes
+
+This is affecting approximately 5,000+ active users and our peak business hours. Please treat this as Priority 1 incident and assign your senior technical team immediately.
+
+Our incident response team is standing by:
+- John Doe (CTO) - john.doe@acmecorp.com - (555) 123-4567
+- Sarah Wilson (DevOps Lead) - sarah.wilson@acmecorp.com - (555) 987-6543
+
+We need immediate response and resolution. Our SLA requires 99.9% uptime, and we are already exceeding acceptable downtime limits.
+
+Please confirm receipt and provide ETA for resolution.
+
+Regards,
+John Doe
+Chief Technology Officer
+ACME Corporation
+Phone: (555) 123-4567
+Email: john.doe@acmecorp.com
+
+---
+This email contains confidential information. If you received this in error, please delete and notify the sender immediately.
