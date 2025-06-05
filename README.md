@@ -8,7 +8,7 @@ A comprehensive multi-agent system for processing and extracting structured data
 
 ## 🖼️ Memory Logs
 
-![Memory Logs](Memory Logs.png)
+![Memory Logs](MemoryLogs.png)
 
 ## 🚀 Live Demo
 
