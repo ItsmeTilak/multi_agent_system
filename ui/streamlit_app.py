@@ -175,9 +175,9 @@ class MultiAgentSystemUI:
                 # Reformat filename to have timestamp before extension
                 import os
                 name, ext = os.path.splitext(filename)
-                new_filename = f"{name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+                new_filename = f"{name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}{ext}"
                 classification_result = self.classifier_agent.classify(
-                    content_for_classify, new_filename
+                    content_for_classify, filename=new_filename
                 )
             
             # Display classification results
@@ -279,6 +279,13 @@ class MultiAgentSystemUI:
     def render_memory_logs(self):
         """Render the shared memory logs section."""
         st.header("📚 Memory Logs")
+
+        # Add refresh button
+        if st.button("🔄 Refresh Memory Logs"):
+            if hasattr(st, "experimental_rerun"):
+                st.experimental_rerun()
+            else:
+                st.warning("Refresh not supported in this Streamlit version. Please reload the page manually.")
         
         try:
             # Get recent records with error handling
@@ -287,6 +294,13 @@ class MultiAgentSystemUI:
             if records:
                 # Convert to DataFrame for better display
                 df = pd.DataFrame(records)
+
+                # Sort records by timestamp or id descending to show newest first
+                if 'timestamp' in df.columns:
+                    df['timestamp'] = pd.to_datetime(df['timestamp'])
+                    df = df.sort_values(by='timestamp', ascending=False)
+                elif 'id' in df.columns:
+                    df = df.sort_values(by='id', ascending=False)
                 
                 # Remove processing_time column if present
                 if 'processing_time' in df.columns:
@@ -294,7 +308,7 @@ class MultiAgentSystemUI:
                 
                 # Format timestamp for display
                 if 'timestamp' in df.columns:
-                    df['timestamp'] = pd.to_datetime(df['timestamp']).dt.strftime('%Y-%m-%d %H:%M:%S')
+                    df['timestamp'] = df['timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S')
                 
                 # Decode source field if it appears as ASCII codes
                 if 'source' in df.columns:
