@@ -6,6 +6,10 @@ A comprehensive multi-agent system for processing and extracting structured data
 
 ![UI Preview](UI_Preview.png)
 
+## 🖼️ Memory Logs
+
+![Memory Logs](Memory Logs.png)
+
 ## 🚀 Live Demo
 
 **[View Live Site on Streamlit](https://itsmetilak-multi-agent-system-main-wy6bhh.streamlit.app/)**
