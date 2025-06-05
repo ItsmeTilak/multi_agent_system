@@ -137,7 +137,7 @@ UPLOAD_DIR=uploads
 ### Supported Formats
 - **PDF**: Invoices, complaints, reports, RFQs
 - **JSON**: Structured data, API responses, configurations
-- **Email**: Plain text, HTML emails (as .txt, eml files)
+- **Email**: Plain text, HTML emails (as .txt, .eml files)
 
 ## 🎮 Usage Examples
 
