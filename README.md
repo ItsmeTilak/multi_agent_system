@@ -26,7 +26,7 @@ This system automatically:
 ## 🏗️ Architecture
 
 ### Agent Types
-1. **Classifier Agent**: Uses large language models (LLMs) to detect input format and classify intent, directing data to the appropriate processing agent.
+1. **Classifier Agent**: Uses a large language model (meta-llama/llama-4-maverick) to detect input format and classify intent, directing data to the appropriate processing agent.
 2. **Email Agent**: Extracts sender information, urgency, intent, and relevant content from plain text or HTML emails.
 3. **JSON Agent**: Validates JSON schema compliance and extracts relevant fields for downstream processing.
 4. **PDF Agent**: Parses PDF documents to extract key information such as invoice details, complaints, reports, and RFQs.
@@ -137,7 +137,7 @@ UPLOAD_DIR=uploads
 ### Supported Formats
 - **PDF**: Invoices, complaints, reports, RFQs
 - **JSON**: Structured data, API responses, configurations
-- **Email**: Plain text, HTML emails (as .txt files)
+- **Email**: Plain text, HTML emails (as .txt, eml files)
 
 ## 🎮 Usage Examples
 
